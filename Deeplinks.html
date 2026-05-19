@@ -41,6 +41,11 @@ At runtime, when the user taps a link, Android triggers an intent and attempts t
       Thats exactly what deeplink exploits try to achieve.It can even make certain surface level security measures useless as those measures were simply bypassed by manually entering the link which the application uses.<br><br>
       Modern android has a lot of guardrails to prevent exactly such exploits.Also it has become standard practice to prevent such things from happening...atleast happening from ease.<br><br>
       However, this does not mean that deeplink redirect vulnerabilities are not found even in quite recent days.There are various ways to bypass both the android security guardrails and also the application guardrails as well.<br>
+      Well lets zoom out of the application links itself.Lets look at what a link is.A link is a connection to another folder that can be accessed by a particular address.<br>
+      This address can be local or in the world wide web by a specific uniform resource locator(URL) - I wrote that in full form to sort of emphasize what URL really is.It is a resource locator.<br>
+      Well what if an application's behaviour is manipulated in such a manner that entering a certain input leads not to another application "page" but a self made malicious site?<br>
+      The user is tricked into going to this malicious site which can be really bad...<br>
+      This is where the critical or atleast high severity nature of such vulnerabilities arise from.<br><br>
       
     </p>
   </body>
