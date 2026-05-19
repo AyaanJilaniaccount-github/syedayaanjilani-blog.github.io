@@ -48,5 +48,23 @@ At runtime, when the user taps a link, Android triggers an intent and attempts t
       This is where the critical or atleast high severity nature of such vulnerabilities arise from.<br><br>
       
     </p>
+    <h3>Well if modern android and even application developers really make measures for exactly such things then why is it such a big deal even?</h3>
+    <p>Well...yea there is some weight to that.Its not that common to find deeplink exploits as many developers actively prepare against such things.<br>
+    Agreed.However, there are some significant nuances to be taken into account.<br>
+    It could be that the application is having measures.Also that the application logic is profoundly sound and lacks significant vulnerabilities, atleast as far as a supposed research is done by a hypothetical malicious hacker.<br>
+      However, again, lets zoom out a bit.What is an application really in essence?<br>
+      It is binary instructions.<br>
+      What executes these binary instructions?<br>
+      The CPU.<br>
+      The CPU has its own sort of memory cache that it uses to perform computation in real time and give the results back.<br>
+      These caches can be arbitrarily represented by addresses with a certain value, often expressed in hexadecimal for simplicity.<br>
+      If...by some way, this cache could be overloaded with information that the CPU cannot store in that particular register what would happen?<br>
+      The information would "overflow" like how water overflows when excess is poured in a jug that cannot hold it any longer.<br>
+      This can corrupt another register information potentially messing up the guardrails that were placed, sometimes even at the level of operating system - since it is at the end a software for ease in interacting with hardware at the end.<br>
+      This sort of exploit is called buffer overflow.With a proper chaining of buffer overflow led memory corruption of the application, one could bypass the very operating system and all of its guardrails.<br>
+
+      <h3>What is the severity really?</h3>
+      <p>Critical.It can even go to Remote Code Execution also known as RCE.Which basically means the name itself - It allows the attacker to inject payloads at the administrator level without being one initially.</p>
+    </p>
   </body>
 </html>
