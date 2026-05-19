@@ -17,7 +17,7 @@ At runtime, when the user taps a link, Android triggers an intent and attempts t
 <br><br>
 1.Open the user's default app that can handle the URI, if one was designated.<br>
 2.Open the only available app that can handle the URI.<br>
-3.Allow the user to select an app from a disambiguation dialog.<br>
+3.Allow the user to select an app from a disambiguation dialog.<br></p>
       <h3>Types of Deeplinks</h3>
       <p>This is well stated in the https://developer.android.com/training/app-links/create-deeplinks site
       <br><br>
@@ -30,6 +30,18 @@ At runtime, when the user taps a link, Android triggers an intent and attempts t
         3.App Links: Available since Android 6.0 (API level 23), these are verified web links. Through a process of website association, you can prove to the Android system that you own the domain. Once verified, the system automatically routes links for that domain directly to your app, skipping the disambiguation dialog entirely. This creates a trusted and seamless experience for your users.
         <br><br>
       </p>
+    <h3>Cool...I know deeplinks now, whats next?</h3>
+    <p>Great! Now the interesting part...<br>
+    Deeplinks can be useful in quite alot of critical ways - Useful for the attacker that is in this case.<br>
+      The core concept is that each part of the application is bundled together and held together with deeplinks.<br>
+      Applications often follow a sequence from one "page" to the next.Many applications rely on this sequence for its security.<br>
+      Well what if...this sequence were messed with?<br>
+      What if one skips the login page directly and goes to the destination page without having to even fill any details?<br>
+      That would not be good right...<br>
+      Thats exactly what deeplink exploits try to achieve.It can even make certain surface level security measures useless as those measures were simply bypassed by manually entering the link which the application uses.<br><br>
+      Modern android has a lot of guardrails to prevent exactly such exploits.Also it has become standard practice to prevent such things from happening...atleast happening from ease.<br><br>
+      However, this does not mean that deeplink redirect vulnerabilities are not found even in quite recent days.There are various ways to bypass both the android security guardrails and also the application guardrails as well.<br>
+      
     </p>
   </body>
 </html>
