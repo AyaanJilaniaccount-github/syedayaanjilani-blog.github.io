@@ -1,6 +1,35 @@
 <html>
   <body>
 <h2>Deeplink redirection</h2>
-<p><a href="index.html">Main Page</a></p>    
+<p><a href="index.html">Main Page</a><br><br></p>
+    <h3>What are deeplinks to begin with?</h3>
+    <p>
+    Deeplinks function very similar to how links function in websites.It links different parts of the application bundled code set for proper synergy amongst that.<br>
+      A login part of the app can lead to a certain part of the same application if certain requirements are met for example.This is fulfilled by deeplinks.<br><br>
+      Thats essentially deeplinks really.It can be app to app or web to app and vice versa.<br><br>
+      It is based on the android intents system.
+      <br>
+      From <a href="https://developer.android.com/training/app-links/create-deeplinks">https://developer.android.com/training/app-links/create-deeplinks</a>
+      <br>
+      Deep linking is a general system capability of Android, supported on all versions, on all devices. It takes advantage of Android's Intents system to route deep links to interested apps. Apps that want to handle a specific deep link URI declare a matching Intent filter in their app manifest files.
+<br>
+At runtime, when the user taps a link, Android triggers an intent and attempts to route it to an app. Because multiple apps can declare intent filters that match a given URI, Android takes these actions, in this order, to route the intent:
+<br><br>
+1.Open the user's default app that can handle the URI, if one was designated.<br>
+2.Open the only available app that can handle the URI.<br>
+3.Allow the user to select an app from a disambiguation dialog.<br>
+      <h3>Types of Deeplinks</h3>
+      <p>This is well stated in the https://developer.android.com/training/app-links/create-deeplinks site
+      <br><br>
+        There are three types of deep links you can support on Android:
+  <br><br>
+        1.Custom deep links: These are deep links that use a custom URI scheme (such as example://products/123) to take a user directly to a specific piece of content within an app. They are powerful for internal navigation or links from sources you control, but they are not standard web links and can still trigger the disambiguation dialog if another app registers the same custom scheme.
+        <br><br>
+        2.Web links: These are deep links that use the standard http and https schemes. They are more versatile because they are standard URLs, but on Android 12 and higher they will almost always trigger the disambiguation dialog, meaning that they are likely to be handled by the user's web browser by default, rather than being routed to your app.
+        <br><br>
+        3.App Links: Available since Android 6.0 (API level 23), these are verified web links. Through a process of website association, you can prove to the Android system that you own the domain. Once verified, the system automatically routes links for that domain directly to your app, skipping the disambiguation dialog entirely. This creates a trusted and seamless experience for your users.
+        <br><br>
+      </p>
+    </p>
   </body>
 </html>
