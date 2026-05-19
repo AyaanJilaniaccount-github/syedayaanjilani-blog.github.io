@@ -31,7 +31,7 @@ At runtime, when the user taps a link, Android triggers an intent and attempts t
         <br><br>
       </p>
     <h3>Cool...I know deeplinks now, whats next?</h3>
-    <p>Great! Now the interesting part...<br>
+    <p>Alright.Now the interesting part...<br>
     Deeplinks can be useful in quite alot of critical ways - Useful for the attacker that is in this case.<br>
       The core concept is that each part of the application is bundled together and held together with deeplinks.<br>
       Applications often follow a sequence from one "page" to the next.Many applications rely on this sequence for its security.<br>
@@ -49,7 +49,7 @@ At runtime, when the user taps a link, Android triggers an intent and attempts t
       
     </p>
     <h3>Well if modern android and even application developers really make measures for exactly such things then why is it such a big deal even?</h3>
-    <p>Well...yea there is some weight to that.Its not that common to find deeplink exploits as many developers actively prepare against such things.<br>
+    <p>Well...yea, there is some weight to that.Its not that common to find deeplink exploits as many developers actively prepare against such things.<br>
     Agreed.However, there are some significant nuances to be taken into account.<br>
     It could be that the application is having measures.Also that the application logic is profoundly sound and lacks significant vulnerabilities, atleast as far as a supposed research is done by a hypothetical malicious hacker.<br>
       However, again, lets zoom out a bit.What is an application really in essence?<br>
@@ -59,12 +59,12 @@ At runtime, when the user taps a link, Android triggers an intent and attempts t
       The CPU has its own registers that it uses to perform computation in real time and give the results back.<br>
       What stores in stack and heap in memory?<br>
       The RAM<br>
-      When the addresses get corrupted it gives a corrupted instruction to the CPU which in turn processes the instruction in a way that is not intended application flow<br>
-      The application sets aside buffers in the memory inside of the RAM with addresses for computation in synergy with the CPU
+      When the addresses get corrupted it gives a corrupted instruction to the CPU which in turn processes the instruction in a way that is not intended application flow.<br>
+      The application sets aside buffers in the memory inside of the RAM with addresses for computation in synergy with the CPU.
       These buffers can be arbitrarily represented by addresses with a certain value, often expressed in hexadecimal for simplicity.<br>
       If...by some way, this buffer could be overloaded with information that the RAM cannot store in that particular memory slot what would happen?<br>
       The information would "overflow" like how water overflows when excess is poured in a jug that cannot hold it any longer.<br>
-      This can corrupt another buffer information potentially messing up the guardrails that were placed, sometimes even at the level of operating system - since it is at the end a software for ease in interacting with hardware at the end.<br>
+      This can corrupt another buffer information potentially messing up the guardrails that were placed, sometimes even at the level of operating system - since it is at the end a software for ease in interacting with hardware.<br>
       This sort of exploit is called buffer overflow.With a proper chaining of buffer overflow led memory corruption of the application, one could bypass the very operating system and all of its guardrails.<br>
       The CPU executes these corrupted memory instructions which is where the synergy between RAM and CPU is exploited for the attacker to behave like a adminstrator user.<br>
 
