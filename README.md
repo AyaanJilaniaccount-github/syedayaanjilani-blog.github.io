@@ -7,5 +7,5 @@ For a more technical focused skillset understanding one can check my linkedin pa
 It is a blog and I plan to have a mix of explanation of the things I research and a bit of personal outlook on things as well.
 
 ## Links
-* Live Blog: https://syedayaanjilani-blog.github.io/
+* Live Blog: [https://syedayaanjilani-blog.github.io/](https://ayaanjilaniaccount-github.github.io/syedayaanjilani-blog.github.io/)
 * LinkedIn: https://www.linkedin.com/in/ayaan-jilani/
